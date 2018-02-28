@@ -29,10 +29,10 @@ export default class PhotosGrid extends Component {
       return (
         <div className="row" key={index}>
           <div className="col-sm-6 image-left">
-            <img src={data.left} onClick={this.handleShow} className="grid-img"></img>
+            <img src={data.left} onClick={this.handleShow} alt="image" className="grid-img"></img>
           </div>
           <div className="col-sm-6 image-right">
-            <img src={data.right} onClick={this.handleShow} className="grid-img"></img>
+            <img src={data.right} onClick={this.handleShow} alt="image" className="grid-img"></img>
           </div>
         </div>
       )
@@ -52,7 +52,7 @@ export default class PhotosGrid extends Component {
             <Modal.Title>Photos</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src={this.state.imgUrl} className="zoom-image"/>
+            <img src={this.state.imgUrl} alt="Big image" className="zoom-image"/>
           </Modal.Body>
           <Modal.Footer>
             <button className="btn btn-default" onClick={this.handleClose}>Close</button>

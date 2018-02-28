@@ -70,7 +70,7 @@ export default class Header extends Component {
               <i className="glyphicon glyphicon-bell bell-icon"></i>
               {this.state && this.state.isLoggedIn ?
                 <span>
-                  <img className="profile-img" src = { this.state.profileImageUrl } />
+                  <img className="profile-img" src = { this.state.profileImageUrl } alt="prfile image"/>
                   <i className="fa fa-power-off logout-btn" onClick = { this.logout } > </i>
                 </span>
                 : ""}

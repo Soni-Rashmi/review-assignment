@@ -30,7 +30,7 @@ export default class Post extends Component {
                   trigger={["hover"]}
                   placement="bottom"
                   overlay={popoverHover}>
-                  <img src={data.user_img} className="media-object avatar" />
+                  <img src={data.user_img} alt="sender image" className="media-object avatar" />
                 </OverlayTrigger>
               </div>
               <div className="media-body">
@@ -44,7 +44,7 @@ export default class Post extends Component {
                 </div>
                  <div className="col-sm-12">
                    <p>{data.comment_text}</p>
-                   <img src={data.comment_img_url} width="100%" />
+                   <img src={data.comment_img_url} alt="No image" width="100%" />
                  </div>
               </div>
             </div>
