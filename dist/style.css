@@ -1,0 +1,199 @@
+body {
+  background: #F5F8FA;
+  box-sizing: border-box; }
+  body .navbar-style {
+    background: #3996D6; }
+    body .navbar-style .navbar-header {
+      color: white; }
+      body .navbar-style .navbar-header .navbar-brand .logo {
+        position: absolute;
+        top: 0; }
+    body .navbar-style .bell-icon {
+      color: #F5F8FA;
+      font-size: 20px;
+      padding: 0 6px;
+      transform: rotate(-45deg); }
+    body .navbar-style .navbar-collapse .nav {
+      font-size: 16px;
+      margin-left: 100px; }
+      body .navbar-style .navbar-collapse .nav a {
+        color: #ffffff; }
+      body .navbar-style .navbar-collapse .nav li > a:hover {
+        background-color: #3f95db;
+        color: black; }
+      body .navbar-style .navbar-collapse .nav li > a:focus {
+        background-color: #3f95db;
+        color: black; }
+      body .navbar-style .navbar-collapse .nav .active {
+        background-color: #3f95db;
+        color: black; }
+    body .navbar-style .btn-collapse {
+      background: #F5F8FA; }
+      body .navbar-style .btn-collapse .bar-icon {
+        background-color: #3996D6; }
+    body .navbar-style .profile-img {
+      border-radius: 50%;
+      height: 35px;
+      width: 35px; }
+    body .navbar-style .logout-btn {
+      color: #F5F8FA;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 0 10px; }
+  body .card {
+    background-color: #ffffff;
+    border: 1px solid #d6d2d2;
+    border-radius: 5px;
+    margin-bottom: 20px; }
+  body .container-body {
+    margin-top: 100px; }
+    body .container-body .form-container {
+      background: #fff;
+      border-radius: 5px;
+      border: 1px solid #d6d2d2;
+      margin-top: 5%;
+      padding: 15px; }
+      body .container-body .form-container .btn {
+        background: #4267B2; }
+      body .container-body .form-container .facebook-btn {
+        font-size: 16px; }
+        body .container-body .form-container .facebook-btn i {
+          font-size: 20px; }
+  body .sponsered-card {
+    padding: 0 10px 10px; }
+    body .sponsered-card .sponsered-card-text {
+      font-size: 15px;
+      margin: 10px 0; }
+    body .sponsered-card p {
+      margin-top: 5px; }
+    body .sponsered-card .btn {
+      border-color: #4267B2;
+      color: #4267B2; }
+  body .likes-card {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 0;
+    padding: 10px 10px; }
+    body .likes-card .likes-card-text {
+      font-size: 15px;
+      margin: 10px 0; }
+    body .likes-card .avatar {
+      border-radius: 50%;
+      width: 60px; }
+    body .likes-card .btn {
+      border-color: #4267B2;
+      color: #4267B2; }
+  body .likes-card-footer {
+    border: 1px solid #d6d2d2;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px; }
+  body .cover-img {
+    height: 150px;
+    width: 100%; }
+  body .profile-card .profile-img {
+    background: #F5F8FA;
+    border: 1px solid #d6d2d2;
+    border-radius: 50%;
+    height: 95px;
+    margin-top: -50px;
+    padding: 3px; }
+  body .profile-card .user-name {
+    font-size: 19px;
+    font-weight: 500;
+    padding: 8px; }
+  body .profile-card .user-info {
+    font-size: 15px;
+    padding: 5px 0; }
+  body .photos-container {
+    padding: 10px 0; }
+    body .photos-container p {
+      text-align: left;
+      margin: 0 12px; }
+    body .photos-container .row {
+      margin: 0; }
+      body .photos-container .row .grid-img {
+        cursor: pointer;
+        height: 100px;
+        width: 100%; }
+      body .photos-container .row .image-right {
+        padding: 12px 12px 6px 6px; }
+      body .photos-container .row .image-left {
+        padding: 12px 6px 6px 12px; }
+    body .photos-container .zoom-image {
+      height: 300px;
+      width: 100%; }
+  body .post-container .btn {
+    border-color: #4267B2;
+    border-radius: 15px;
+    color: #4267B2; }
+  body .post-container .post-comment {
+    border-bottom: 1px solid #d6d2d2;
+    padding: 15px 0; }
+    body .post-container .post-comment .media-heading {
+      font-size: 15px;
+      font-weight: 500;
+      padding: 0; }
+    body .post-container .post-comment .media-right {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+  body .post-container .avatar {
+    border-radius: 50%;
+    width: 60px; }
+  body .send-post {
+    padding: 20px; }
+
+.contact-us-card {
+  padding: 20px 40px 40px 20px; }
+  .contact-us-card .contact-text {
+    text-transform: uppercase;
+    color: #6F777B; }
+  .contact-us-card strong {
+    color: red;
+    text-transform: uppercase; }
+  .contact-us-card .address p {
+    margin: 0px; }
+  .contact-us-card .required-label::after {
+    color: #ED564C;
+    content: " *"; }
+  .contact-us-card .form-control {
+    background: #C7C7C5; }
+  .contact-us-card textarea {
+    height: 125px; }
+  .contact-us-card .btn {
+    background-color: #ED564C;
+    border: 1px solid  #ED564C;
+    font-size: 15px;
+    outline: none;
+    padding: 5px 35px; }
+  .contact-us-card .company-info {
+    background-image: url(src/assets/images/bg.png);
+    height: 520px; }
+    .contact-us-card .company-info .email {
+      margin: 30px 0; }
+    .contact-us-card .company-info .telephone, .contact-us-card .company-info .skype, .contact-us-card .company-info .address, .contact-us-card .company-info .company-no, .contact-us-card .company-info .images {
+      margin-bottom: 30px; }
+    .contact-us-card .company-info img {
+      height: 30px;
+      padding-right: 10px; }
+
+@media screen and (max-width: 414px) {
+  body .navbar-style .navbar-collapse .nav {
+    margin-left: 0px; }
+  body .photos-container .row .grid-img {
+    height: 200px; }
+  body .photos-container .row .image-left, body .photos-container .row .image-right {
+    padding: 5px 10px; } }
+
+@media screen and (max-width: 768px) {
+  body .profile-card .email {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; } }
+
+@media screen and (max-width: 1024px) {
+  body .profile-card .profile-img {
+    height: 72px;
+    margin-top: -35px; } }
