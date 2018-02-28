@@ -93,8 +93,8 @@ export default class ContactUs extends Component {
                   <span>Company No. 0011922922</span>
                 </div>
                 <div className="images">
-                  <img src="./src/assets/images/fb.png" alt="facebook" />
-                  <img src="./src/assets/images/twitter.png" alt="twitter"/>
+                  <img src="src/assets/images/fb.png" alt="facebook" />
+                  <img src="src/assets/images/twitter.png" alt="twitter"/>
                 </div>
               </div>
             </div>
