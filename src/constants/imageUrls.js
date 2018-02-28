@@ -52,6 +52,6 @@ const ALL_COMMENTS_DATA = [
     comment_img_url: null
   }
 ];
-if(!ls.get("allComments")) {
+if(ls.get("allComments") === "") {
   ls.set("allComments", ALL_COMMENTS_DATA);
 }

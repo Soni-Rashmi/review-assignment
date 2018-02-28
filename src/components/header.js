@@ -15,12 +15,12 @@ export default class Header extends Component {
     this.state = {
       name:"",
       isLoggedIn: false,
-      profileImageUrl:""
+      profileImageUrl: ""
     }
   }
 
   logout() {
-    this.setState({isLoggedIn: false})
+    this.setState({isLoggedIn: false});
     ls.set("profileData", "");
     ls.set("allComments", "");
     this.props.history.push(HOME_ROUTE_PATH);
