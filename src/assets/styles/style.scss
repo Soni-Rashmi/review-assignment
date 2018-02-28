@@ -1,0 +1,321 @@
+
+body {
+  background: #F5F8FA;
+  box-sizing: border-box;
+
+  .navbar-style {
+    background: #3996D6;
+    .navbar-header {
+     .navbar-brand {
+       .logo {
+         position: absolute;
+         top: 0;
+       }
+     }
+       color: white;
+   }
+
+   .bell-icon {
+       color:#F5F8FA;
+       font-size: 20px;
+       padding: 0 6px;
+       transform: rotate(-45deg);
+   }
+
+   .navbar-collapse {
+     .nav {
+       font-size: 16px;
+       margin-left: 100px;
+       a {
+         color: #ffffff;
+       }
+       li> a:hover {
+         background-color: #3f95db;
+         color: black;
+       }
+       li> a:focus {
+         background-color: #3f95db;
+         color: black;
+       }
+       .active {
+         background-color: #3f95db;
+         color: black;
+       }
+     }
+   }
+
+   .btn-collapse {
+     background: #F5F8FA;
+
+     .bar-icon {
+       background-color: #3996D6;
+     }
+   }
+   .profile-img {
+     border-radius: 50%;
+     height: 35px;
+     width: 35px;
+   }
+   .logout-btn {
+     color: #F5F8FA;
+     cursor: pointer;
+     font-size: 20px;
+     padding: 0 10px;
+   }
+ }
+
+ .card {
+   background-color: #ffffff;
+   border: 1px solid #d6d2d2;
+   border-radius: 5px;
+   margin-bottom: 20px;
+ }
+
+ .container-body {
+   margin-top: 100px;
+
+   .form-container {
+      background: #fff;
+      border-radius: 5px;
+      border: 1px solid #d6d2d2;
+      margin-top: 5%;
+      padding: 15px;
+
+      .btn {
+        background: #4267B2;
+      }
+      .facebook-btn {
+        font-size: 16px;
+        i {
+          font-size: 20px;
+        }
+      }
+   }
+ }
+
+   .sponsered-card {
+     padding: 0 10px 10px;
+
+     .sponsered-card-text {
+       font-size: 15px;
+       margin: 10px 0;
+     }
+
+     p{
+       margin-top: 5px;
+     }
+     .btn {
+       border-color: #4267B2;
+       color: #4267B2;
+     }
+   }
+
+   .likes-card {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin-bottom: 0;
+      padding: 10px 10px;
+
+     .likes-card-text {
+        font-size: 15px;
+        margin: 10px 0;
+      }
+
+     .avatar {
+       border-radius: 50%;
+       width: 60px;
+     }
+     .btn {
+       border-color: #4267B2;
+       color: #4267B2;
+     }
+   }
+
+   .likes-card-footer {
+     border: 1px solid #d6d2d2;
+     border-top: none;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+     padding: 10px;
+   }
+
+   .cover-img {
+     height: 150px;
+     width: 100%;
+   }
+
+  .profile-card {
+
+    .profile-img {
+      background: #F5F8FA;
+      border: 1px solid #d6d2d2;
+      border-radius: 50%;
+      height: 95px;
+      margin-top: -50px;
+      padding: 3px;
+    }
+    .user-name {
+      font-size: 19px;
+      font-weight: 500;
+      padding: 8px;
+    }
+    .user-info {
+      font-size: 15px;
+      padding: 5px 0;
+    }
+  }
+
+  .photos-container {
+    padding: 10px 0;
+    p {
+      text-align: left;
+      margin: 0 12px;
+    }
+    .row {
+      margin: 0;
+
+      .grid-img {
+        cursor: pointer;
+        height: 100px;
+        width: 100%;
+      }
+
+      .image-right  {
+        padding: 12px 12px 6px 6px;
+      }
+
+      .image-left  {
+        padding: 12px 6px 6px 12px;
+      }
+    }
+    .zoom-image {
+      height: 300px;
+      width: 100%;
+    }
+  }
+
+  .post-container {
+    .btn {
+      border-color: #4267B2;
+      border-radius: 15px;
+      color: #4267B2;
+    }
+    .post-comment {
+      border-bottom: 1px solid #d6d2d2;
+      padding: 15px 0;
+
+      .media-heading {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0;
+      }
+      .media-right {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+    .avatar {
+      border-radius: 50%;
+      width: 60px;
+    }
+  }
+  .send-post {
+    padding: 20px;
+  }
+}
+
+.contact-us-card {
+    padding: 20px 40px 40px 20px;
+
+  .contact-text {
+      text-transform: uppercase;
+      color: #6F777B;
+  }
+  strong {
+    color: red;
+    text-transform: uppercase;
+  }
+  .address {
+    p {
+      margin: 0px;
+    }
+  }
+  .required-label::after {
+    color: #ED564C;
+    content: " *";
+  }
+  .form-control {
+    background: #C7C7C5;
+  }
+
+  textarea {
+    height: 125px;
+  }
+
+  .btn {
+    background-color: #ED564C;
+    border: 1px solid  #ED564C;
+    font-size: 15px;
+    outline: none;
+    padding: 5px 35px;
+  }
+  .company-info {
+    background-image: url("../images/bg.png");
+    height: 520px;
+    .email {
+      margin: 30px 0;
+    }
+    .telephone, .skype, .address, .company-no, .images {
+      margin-bottom: 30px;
+    }
+    img {
+      height: 30px;
+      padding-right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  body {
+    .navbar-style {
+      .navbar-collapse {
+        .nav {
+         margin-left: 0px;
+       }
+      }
+    }
+
+    .photos-container {
+      .row {
+        .grid-img {
+          height: 200px;
+        }
+        .image-left, .image-right {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    .profile-card {
+      .email {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    .profile-card {
+      .profile-img {
+        height: 72px;
+        margin-top: -35px;
+      }
+    }
+  }
+}
