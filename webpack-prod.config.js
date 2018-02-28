@@ -33,6 +33,7 @@ module.exports = {
         use:  {
           loader : 'file-loader',
           options: {
+            include: 'src/assets/images',
             name: '[path][name].[ext]'
           }
         }

@@ -12,7 +12,7 @@ export const YELLOW_BUILDING_IMG = "https://bootstrap-themes.github.io/applicati
 
 export const SUNSET_IMG = "https://bootstrap-themes.github.io/application/assets/img/instagram_3.jpg";
 
-export const LOGO_IMG = "../assets/images/logo.png";
+export const LOGO_IMG = "src/assets/images/logo.png";
 
 //
 // export const SEA_IMG = "https://bootstrap-themes.github.io/application/assets/img/instagram_5.jpg";
