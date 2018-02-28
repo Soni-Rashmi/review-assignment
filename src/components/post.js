@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { OverlayTrigger, Popover } from "react-bootstrap";
+import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
+import Popover from 'react-bootstrap/lib/Popover';
 import { Link } from "react-router-dom";
 
 import { SEND_POST_ROUTE_PATH } from "../constants/routePath";

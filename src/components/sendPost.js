@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import ls from "localstorage-ttl";
+import FormGroup from 'react-bootstrap/lib/FormGroup';
+import ControlLabel from 'react-bootstrap/lib/ControlLabel';
+import FormControl from 'react-bootstrap/lib/FormControl';
 
-import { FormGroup, ControlLabel, FormControl, HelpBlock } from "react-bootstrap";
 import { PROFILE_ROUTE_PATH } from "../constants/routePath";
 
 let allComments = ls.get("allComments");

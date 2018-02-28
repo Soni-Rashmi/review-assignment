@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Modal } from "react-bootstrap";
+import Modal from "react-bootstrap/lib/Modal";
 
 import { photo_gallery } from "../constants/imageUrls";
 

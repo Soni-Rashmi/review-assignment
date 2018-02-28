@@ -10,8 +10,8 @@ export default class About extends Component {
       name:"",
       email:"",
       gender:"",
-      profile_img_url:"",
-      cover_photo_url: ""
+      profileImgUrl:"",
+      coverPhotoUrl: ""
     }
   }
   componentDidMount() {
@@ -20,8 +20,8 @@ export default class About extends Component {
       name: profileData.name,
       email: profileData.email,
       gender: profileData.gender,
-      profile_img_url: profileData.profile_img_url,
-      cover_photo_url: profileData.cover_photo_url
+      profileImgUrl: profileData.profile_img_url,
+      coverPhotoUrl: profileData.cover_photo_url
     });
   }
 
@@ -31,7 +31,7 @@ export default class About extends Component {
         <img className="cover-img" src= {ICELAND_IMG} />
         <div className="container-fluid">
           <div className="row">
-            <img className="profile-img col-sm-4 col-sm-offset-4" src= {this.state.profile_img_url} />
+            <img className="profile-img col-sm-4 col-sm-offset-4" src= {this.state.coverPhotoUrl} />
           </div>
           <div className="row">
             <div className="user-name col-xs-12 user-info"> {this.state.name} </div>

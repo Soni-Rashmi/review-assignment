@@ -2,13 +2,9 @@ import React, { Component} from "react";
 import FacebookProvider, { Login } from "react-facebook";
 import graph from "fb-react-sdk";
 import ls from "localstorage-ttl";
-// import FormGroup from 'react-bootstrap/lib/FormGroup';
-// import ControlLabel from 'react-bootstrap/lib/ControlLabel';
-// import FormControl from 'react-bootstrap/lib/FormControl';
-// import Tooltip from 'react-bootstrap/lib/Tooltip';
-// import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
-
-import { FormGroup, ControlLabel, FormControl } from "react-bootstrap";
+import FormGroup from 'react-bootstrap/lib/FormGroup';
+import ControlLabel from 'react-bootstrap/lib/ControlLabel';
+import FormControl from 'react-bootstrap/lib/FormControl';
 
 import jsonData from "../constants/userData.json";
 import { PROFILE_ROUTE_PATH } from "../constants/routePath";
