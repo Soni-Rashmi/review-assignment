@@ -44,7 +44,7 @@ export default class Post extends Component {
                 </div>
                  <div className="col-sm-12">
                    <p>{data.comment_text}</p>
-                   <img src={data.comment_img_url} alt="No image" width="100%" />
+                  {(data.comment_img_url)? <img src={data.comment_img_url} alt="No image" width="100%" /> : ""}
                  </div>
               </div>
             </div>

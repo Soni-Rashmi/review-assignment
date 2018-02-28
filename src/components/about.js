@@ -31,7 +31,7 @@ export default class About extends Component {
         <img className="cover-img" src= {ICELAND_IMG} alt="Cover image"/>
         <div className="container-fluid">
           <div className="row">
-            <img className="profile-img col-sm-4 col-sm-offset-4" src= {this.state.coverPhotoUrl} alt="Profile image"/>
+            <img className="profile-img col-sm-4 col-sm-offset-4" src= {this.state.profileImgUrl} alt="Profile image"/>
           </div>
           <div className="row">
             <div className="user-name col-xs-12 user-info"> {this.state.name} </div>
