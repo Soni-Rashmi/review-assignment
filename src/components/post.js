@@ -28,7 +28,7 @@ export default class Post extends Component {
               <div className="media-left">
                 <OverlayTrigger
                   trigger={["hover"]}
-                  placement="bottom"
+                  placement="right"
                   overlay={popoverHover}>
                   <img src={data.user_img} alt="sender image" className="media-object avatar" />
                 </OverlayTrigger>
