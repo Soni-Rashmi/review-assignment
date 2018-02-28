@@ -22,6 +22,7 @@ export default class Header extends Component {
   logout() {
     this.setState({isLoggedIn: false})
     ls.set("profileData", "");
+    ls.set("allComments", "");
     this.props.history.push(HOME_ROUTE_PATH);
   }
 
