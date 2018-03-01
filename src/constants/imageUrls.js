@@ -29,7 +29,7 @@ export let photo_gallery = [
   }
 ]
 
-const ALL_COMMENTS_DATA = [
+export const ALL_COMMENTS_DATA = [
   {
     user_img: AVATAR_FAT,
     user_name: "Jacob Thronton",
@@ -52,6 +52,7 @@ const ALL_COMMENTS_DATA = [
     comment_img_url: null
   }
 ];
-if(ls.get("allComments") === "") {
-  ls.set("allComments", ALL_COMMENTS_DATA);
+
+if(!ls.get("allComments")){
+    ls.set("allComments", ALL_COMMENTS_DATA);
 }

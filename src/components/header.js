@@ -20,9 +20,13 @@ export default class Header extends Component {
   }
 
   logout() {
+    // ls.set("profileData", "");
+    // ls.set("allComments", "");
+
+    localStorage.removeItem("profileData");
+    localStorage.removeItem("allComments");
+    // ls.removeItem("allComments");
     this.setState({isLoggedIn: false});
-    ls.set("profileData", "");
-    ls.set("allComments", "");
     this.props.history.push(HOME_ROUTE_PATH);
   }
 

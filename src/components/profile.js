@@ -5,12 +5,12 @@ import { Sponsered } from "./sponsered";
 import About from "./about";
 import Post from "./post";
 import PhotosGrid from "./photos";
-
-let allComments;
+import { ALL_COMMENTS_DATA } from "../constants/imageUrls";
 
 export default class Profile extends Component {
+
   render() {
-    allComments = ls.get("allComments");
+    let allComments= (ls.get("allComments")? ls.get("allComments") : ALL_COMMENTS_DATA);
     return (
       <div className="container-fluid container-body">
         <div className="row">

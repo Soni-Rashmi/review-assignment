@@ -32,7 +32,7 @@ export default class Home extends Component {
     if(this.getEmailValidationState() === "success" && this.getPasswordValidationState() === "success") {
       let profileData = jsonData;
       ls.set("profileData", profileData);
-
+      // localStorage.setItem("profileData", profileData);
       if(profileData.verified){
         this.props.history.push(PROFILE_ROUTE_PATH);
       }
@@ -51,7 +51,7 @@ export default class Home extends Component {
   handleResponse(data) {
     let instance = this;
     let profileData;
-    // accesToken = data.tokenDetail.accessToken;
+
     graph.setAccessToken(data.tokenDetail.accessToken);
     graph.get("me?fields=picture,cover", function(err, res) {
       profileData = {

@@ -18,7 +18,7 @@ export const routes = (
       <Switch>
         <Redirect exact from="/" to={HOME_ROUTE_PATH} />
         <Route exact path={HOME_ROUTE_PATH} render={(props) => (isLoggedIn() ? <Redirect to={PROFILE_ROUTE_PATH} /> : <Home history={props.history}/>) }/>
-        <Route exact path={PROFILE_ROUTE_PATH} render={(props) => (!isLoggedIn() ? <Redirect to={HOME_ROUTE_PATH} /> : <Profile history={props.history}/>) }/>
+        <Route exact path={PROFILE_ROUTE_PATH} render={(props) => (!isLoggedIn() ? <Redirect to={HOME_ROUTE_PATH} /> : <Profile history={props.history} />) }/>
         <Route exact path={SEND_POST_ROUTE_PATH} render={(props) => (!isLoggedIn() ? <Redirect to={HOME_ROUTE_PATH} /> : <SendPost history={props.history}/>) }/>
         <Route exact path={CONTACT_US_ROUTE_PATH} component={ContactUs} />
         <Route render={(props) => (isLoggedIn() ? <Redirect to={PROFILE_ROUTE_PATH} /> : <Redirect to={HOME_ROUTE_PATH} />) } />

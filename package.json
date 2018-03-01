@@ -37,7 +37,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "local": "webpack --config webpack.config",
+    "local": "webpack-dev-server --hot",
     "build": "webpack --config webpack-prod.config",
     "watch": "webpack --watch"
   }
