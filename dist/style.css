@@ -169,7 +169,7 @@ body {
     outline: none;
     padding: 5px 35px; }
   .contact-us-card .company-info {
-    background-image: url(src/assets/images/bg.png);
+    background-image: url(/Users/newput/Documents/new/review-assignment/distsrc/assets/images/bg.png);
     height: 520px; }
     .contact-us-card .company-info .email {
       margin: 30px 0; }
