@@ -49,7 +49,7 @@ export default class Header extends Component {
               <span className="icon-bar bar-icon"></span>
             </button>
             <Link className="navbar-brand" to={PROFILE_ROUTE_PATH}>
-              <img src={LOGO_IMG} alt="logo" className="logo"></img>
+              <img src={require(LOGO_IMG)} alt="logo" className="logo"></img>
             </Link>
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
