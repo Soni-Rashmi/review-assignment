@@ -20,8 +20,8 @@ export default class About extends Component {
       name: profileData.name,
       email: profileData.email,
       gender: profileData.gender,
-      profileImgUrl: profileData.profile_img_url,
-      coverPhotoUrl: profileData.cover_photo_url
+      profileImgUrl: profileData.profileImageUrl,
+      coverPhotoUrl: profileData.coverPhotoUrl
     });
   }
 

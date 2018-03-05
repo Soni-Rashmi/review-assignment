@@ -8,7 +8,6 @@ import PhotosGrid from "./photos";
 import { ALL_COMMENTS_DATA } from "../constants/imageUrls";
 
 export default class Profile extends Component {
-
   render() {
     let allComments= (ls.get("allComments")? ls.get("allComments") : ALL_COMMENTS_DATA);
     return (

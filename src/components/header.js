@@ -30,15 +30,19 @@ export default class Header extends Component {
     if(!this.state.isLoggedIn){
       setUserInfo(this);
     }
+    let activeLinkName = this.props.location.pathname;
+    this.setState({activeLinkName});
   }
 
-  componentWillReceiveProps() {
+  componentWillReceiveProps(nextProps) {
     if(!this.state.isLoggedIn){
       setUserInfo(this);
     }
+    let activeLinkName = nextProps.location.pathname;
+    this.setState({activeLinkName});
   }
   render() {
-    let activeLinkName = this.props.history.location.pathname;
+
     return(
       <nav className="navbar navbar-fixed-top navbar-style">
         <div className="container-fluid">
@@ -55,13 +59,13 @@ export default class Header extends Component {
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav">
               <li>
-                <Link to={HOME_ROUTE_PATH} className={activeLinkName === HOME_ROUTE_PATH ? "active" : ""}>Home</Link>
+                <Link to={HOME_ROUTE_PATH} className={this.state.activeLinkName === HOME_ROUTE_PATH ? "active" : ""}>Home</Link>
               </li>
               <li >
-                <Link to={PROFILE_ROUTE_PATH} className={activeLinkName === PROFILE_ROUTE_PATH ? "active" : ""}>Profile</Link>
+                <Link to={PROFILE_ROUTE_PATH} className={this.state.activeLinkName === PROFILE_ROUTE_PATH ? "active" : ""}>Profile</Link>
               </li>
               <li >
-                <Link to={CONTACT_US_ROUTE_PATH} className={activeLinkName === CONTACT_US_ROUTE_PATH ? "active" : ""}>Contact us</Link>
+                <Link to={CONTACT_US_ROUTE_PATH} className={this.state.activeLinkName === CONTACT_US_ROUTE_PATH ? "active" : ""}>Contact us</Link>
               </li>
             </ul>
             <form className="navbar-form navbar-right">
@@ -88,7 +92,7 @@ function setUserInfo(instance) {
   if(profileData) {
     instance.setState({
       name: profileData.name,
-      profileImageUrl: profileData.profile_img_url,
+      profileImageUrl: profileData.profileImageUrl,
       isLoggedIn: true
     });
   }

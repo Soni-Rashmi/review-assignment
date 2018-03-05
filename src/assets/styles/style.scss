@@ -31,7 +31,8 @@ body {
        }
        li> a:hover {
          background-color: #3f95db;
-         color: black;
+         color: #ffffff;
+         font-size: 20px;
        }
        li> a:focus {
          background-color: #3f95db;
@@ -100,6 +101,10 @@ body {
        font-size: 15px;
        margin: 10px 0;
      }
+     .yellow-building {
+       height: 200px;
+       width: 100%;
+     }
 
      p{
        margin-top: 5px;
@@ -128,6 +133,7 @@ body {
      .btn {
        border-color: #4267B2;
        color: #4267B2;
+       padding: 2px;
      }
    }
 
@@ -210,7 +216,6 @@ body {
         padding: 0;
       }
       .media-right {
-        text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
       }
@@ -283,7 +288,7 @@ body {
         .nav {
          margin-left: 0px;
        }
-       .navbar-form, .profile-img {
+       .navbar-form {
          .search-box, .profile-img {
            display: none;
          }

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import ls from "localstorage-ttl";
-import FormGroup from 'react-bootstrap/lib/FormGroup';
-import ControlLabel from 'react-bootstrap/lib/ControlLabel';
-import FormControl from 'react-bootstrap/lib/FormControl';
+import FormGroup from "react-bootstrap/lib/FormGroup";
+import ControlLabel from "react-bootstrap/lib/ControlLabel";
+import FormControl from "react-bootstrap/lib/FormControl";
+import HelpBlock from "react-bootstrap/lib/HelpBlock";
 
 import { PROFILE_ROUTE_PATH } from "../constants/routePath";
 
@@ -34,14 +35,14 @@ export default class SendPost extends Component {
   }
 
   handleSubmit(event) {
-    let user_info = ls.get("profileData");
+    let userInfo = ls.get("profileData");
     if((this.getCommentValidationState() === "success") && (this.getImageValidationState() === null || this.getImageValidationState() === "success")) {
       newComment = {
-        user_name: user_info.name,
-        user_img: user_info.profile_img_url,
-        comment_text: this.state.comment,
-        comment_img_url: this.state.image,
-        time_stamp: Date.now()
+        userName: userInfo.name,
+        userImg: userInfo.profileImageUrl,
+        commentText: this.state.comment,
+        commentImageUrl: this.state.image,
+        timeStamp: Date.now()
       }
 
       allComments.unshift(newComment);
@@ -65,7 +66,7 @@ export default class SendPost extends Component {
 
   getCommentValidationState() {
     if(this.state && this.state.comment){
-      if(this.state.comment.length === 0) {
+      if(this.state.comment === null) {
         return "error"
       } else {
         return "success"
@@ -84,14 +85,16 @@ export default class SendPost extends Component {
                 <ControlLabel>Comment:</ControlLabel>
                 <FormControl componentClass="textarea" name="comment" value = {this.state.comment} placeholder="Comment"  onChange={this.handleInputChange} required></FormControl>
                 <FormControl.Feedback />
+                <HelpBlock>{this.getCommentValidationState() === "error" ? "Write your comment." : ""}</HelpBlock>
               </FormGroup>
               <FormGroup validationState={this.getImageValidationState()}>
                 <ControlLabel>Image URL :</ControlLabel>
                 <FormControl componentClass="input" name="image" value = {this.state.image} placeholder="Image url..." onChange={this.handleInputChange}></FormControl>
                 <FormControl.Feedback />
+                <HelpBlock>{this.getImageValidationState() === "error" ? "Enter a valid image url." : ""}</HelpBlock>
               </FormGroup>
               <FormGroup>
-                <button className="btn btn-primary">Submit</button>
+                <button className="btn btn-primary">Add comment</button>
               </FormGroup>
             </form>
           </div>

@@ -20,7 +20,8 @@ body {
         color: #ffffff; }
       body .navbar-style .navbar-collapse .nav li > a:hover {
         background-color: #3f95db;
-        color: black; }
+        color: #ffffff;
+        font-size: 20px; }
       body .navbar-style .navbar-collapse .nav li > a:focus {
         background-color: #3f95db;
         color: black; }
@@ -64,6 +65,9 @@ body {
     body .sponsered-card .sponsered-card-text {
       font-size: 15px;
       margin: 10px 0; }
+    body .sponsered-card .yellow-building {
+      height: 200px;
+      width: 100%; }
     body .sponsered-card p {
       margin-top: 5px; }
     body .sponsered-card .btn {
@@ -82,7 +86,8 @@ body {
       width: 60px; }
     body .likes-card .btn {
       border-color: #4267B2;
-      color: #4267B2; }
+      color: #4267B2;
+      padding: 2px; }
   body .likes-card-footer {
     border: 1px solid #d6d2d2;
     border-top: none;
@@ -136,7 +141,6 @@ body {
       font-weight: 500;
       padding: 0; }
     body .post-container .post-comment .media-right {
-      text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden; }
   body .post-container .avatar {
@@ -183,11 +187,11 @@ body {
 @media screen and (max-width: 414px) {
   body .navbar-style .navbar-collapse .nav {
     margin-left: 0px; }
-  body .navbar-style .navbar-collapse .navbar-form .search-box, body .navbar-style .navbar-collapse .navbar-form .profile-img, body .navbar-style .navbar-collapse .profile-img .search-box, body .navbar-style .navbar-collapse .profile-img .profile-img {
+  body .navbar-style .navbar-collapse .navbar-form .search-box, body .navbar-style .navbar-collapse .navbar-form .profile-img {
     display: none; }
-  body .navbar-style .navbar-collapse .navbar-form .logout-btn, body .navbar-style .navbar-collapse .profile-img .logout-btn {
+  body .navbar-style .navbar-collapse .navbar-form .logout-btn {
     display: block; }
-  body .navbar-style .navbar-collapse .navbar-form .logout-btn, body .navbar-style .navbar-collapse .navbar-form .bell-icon, body .navbar-style .navbar-collapse .profile-img .logout-btn, body .navbar-style .navbar-collapse .profile-img .bell-icon {
+  body .navbar-style .navbar-collapse .navbar-form .logout-btn, body .navbar-style .navbar-collapse .navbar-form .bell-icon {
     margin: 5px 0px 5px 10px; }
   body .photos-container .row .grid-img {
     height: 200px; }

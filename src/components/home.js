@@ -2,9 +2,10 @@ import React, { Component} from "react";
 import FacebookProvider, { Login } from "react-facebook";
 import graph from "fb-react-sdk";
 import ls from "localstorage-ttl";
-import FormGroup from 'react-bootstrap/lib/FormGroup';
-import ControlLabel from 'react-bootstrap/lib/ControlLabel';
-import FormControl from 'react-bootstrap/lib/FormControl';
+import FormGroup from "react-bootstrap/lib/FormGroup";
+import ControlLabel from "react-bootstrap/lib/ControlLabel";
+import FormControl from "react-bootstrap/lib/FormControl";
+import HelpBlock from "react-bootstrap/lib/HelpBlock";
 
 import jsonData from "../constants/userData.json";
 import { PROFILE_ROUTE_PATH } from "../constants/routePath";
@@ -57,8 +58,8 @@ export default class Home extends Component {
         name : data.profile.name,
         email : data.profile.email,
         gender : data.profile.gender,
-        profile_img_url : res.picture.data.url,
-        cover_photo_url : res.cover.source,
+        profileImageUrl : res.picture.data.url,
+        coverPhotoUrl : res.cover.source,
         varified : true
       }
       ls.set("profileData", profileData);
@@ -75,11 +76,19 @@ export default class Home extends Component {
   getEmailValidationState() {
     if(this.state && this.state.email){
       if(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test(this.state.email)){
-        return 'success'
+        return "success"
       } else {
-        return 'error'
+        return "error"
       }
     }
+    // if(this.state && this.state.email){
+    //
+    //   if(this.state.pwd.length){
+    //     return "success"
+    //   } else {
+    //     return "error"
+    //   }
+    // }
     return null;
   }
 
@@ -87,9 +96,9 @@ export default class Home extends Component {
     if(this.state && this.state.pwd) {
       const length = this.state.pwd.length;
       if (length > 6) {
-        return 'success';
+        return "success";
       } else {
-        return 'error';
+        return "error";
       }
     }
     return null;
@@ -105,11 +114,13 @@ export default class Home extends Component {
                 <ControlLabel>Email: </ControlLabel>
                 <FormControl componentClass="input" name="email" type="email" value ={this.state.email} onChange={this.handleInputChange} required></FormControl>
                 <FormControl.Feedback />
+                <HelpBlock>{this.getEmailValidationState() === "error" ? "Enter a valid email" : ""}</HelpBlock>
               </FormGroup>
               <FormGroup validationState={this.getPasswordValidationState()}>
                 <ControlLabel>Password: </ControlLabel>
                 <FormControl componentClass="input" name="pwd" type="password" value ={this.state.pwd} onChange={this.handleInputChange} required></FormControl>
                 <FormControl.Feedback />
+                <HelpBlock>{this.getPasswordValidationState() === "error" ? "Enter a password of atleast 6 characters long." : ""}</HelpBlock>
               </FormGroup>
               <FormGroup>
                 <button type="submit" className="btn btn-primary">Submit</button>

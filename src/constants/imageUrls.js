@@ -16,7 +16,7 @@ export const SUNSET_IMG = "https://bootstrap-themes.github.io/application/assets
 
 export const LOGO_IMG = "src/assets/images/logo.png";
 
-export let photo_gallery = [
+export let photoGallery = [
   {
     left: "https://bootstrap-themes.github.io/application/assets/img/instagram_5.jpg",
     right: "https://bootstrap-themes.github.io/application/assets/img/instagram_6.jpg"
@@ -33,25 +33,25 @@ export let photo_gallery = [
 
 export const ALL_COMMENTS_DATA = [
   {
-    user_img: AVATAR_FAT,
-    user_name: "Jacob Thronton",
-    time_stamp:"21 min",
-    comment_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    comment_img_url: null
+    userImg: AVATAR_FAT,
+    userName: "Jacob Thronton",
+    timeStamp: "21 min",
+    commentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    commentImageUrl: null
   },
   {
-    user_img: AVATAR_MDO,
-    user_name: "Mark Otto",
-    time_stamp:"1 hour",
-    comment_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    comment_img_url: SUNSET_IMG
+    userImg: AVATAR_MDO,
+    userName: "Mark Otto",
+    timeStamp: "1 hour",
+    commentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    commentImageUrl: SUNSET_IMG
   },
   {
-    user_img: AVATAR_MDO,
-    user_name: "Mark Otto",
-    time_stamp:"1 day",
-    comment_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    comment_img_url: null
+    userImg: AVATAR_MDO,
+    userName: "Mark Otto",
+    timeStamp: "1 day",
+    commentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    commentImageUrl: null
   }
 ];
 

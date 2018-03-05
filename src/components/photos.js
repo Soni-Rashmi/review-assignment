@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Modal from "react-bootstrap/lib/Modal";
 
-import { photo_gallery } from "../constants/imageUrls";
+import { photoGallery } from "../constants/imageUrls";
 
 export default class PhotosGrid extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ export default class PhotosGrid extends Component {
     this.setState({ show: true, imgUrl: e.target.src });
   }
   renderPhotoGrid () {
-    return (photo_gallery.map((data, index) => {
+    return (photoGallery.map((data, index) => {
       return (
         <div className="row" key={index}>
           <div className="col-sm-6 image-left">

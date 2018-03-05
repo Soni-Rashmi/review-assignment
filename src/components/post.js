@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
-import Popover from 'react-bootstrap/lib/Popover';
+import OverlayTrigger from "react-bootstrap/lib/OverlayTrigger";
+import Popover from "react-bootstrap/lib/Popover";
 import { Link } from "react-router-dom";
 
 import { SEND_POST_ROUTE_PATH } from "../constants/routePath";
@@ -30,21 +30,21 @@ export default class Post extends Component {
                   trigger={["hover"]}
                   placement="right"
                   overlay={popoverHover}>
-                  <img src={data.user_img} alt="sender image" className="media-object avatar" />
+                  <img src={data.userImg} alt="sender image" className="media-object avatar" />
                 </OverlayTrigger>
               </div>
               <div className="media-body">
                 <div className="col-sm-12 clearfix">
                   <div className="media-heading col-sm-8 col-xs-6 text-left">
-                    {data.user_name}
+                    {data.userName}
                   </div>
                   <div className="media-right col-sm-4 col-xs-6 text-right ">
-                    {index < length ? getTimeStamp(data.time_stamp): data.time_stamp}
+                    {index < length ? getTimeStamp(data.timeStamp): data.timeStamp}
                   </div>
                 </div>
                  <div className="col-sm-12">
-                   <p>{data.comment_text}</p>
-                  {(data.comment_img_url)? <img src={data.comment_img_url} alt="No image" width="100%" /> : ""}
+                   <p>{data.commentText}</p>
+                  {(data.commentImageUrl)? <img src={data.commentImageUrl} alt="No image" width="100%" /> : ""}
                  </div>
               </div>
             </div>

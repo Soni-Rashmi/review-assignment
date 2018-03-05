@@ -5,6 +5,6 @@
   "gender": "female",
   "verified": true,
   "accessToken": "EAACs0g07Cf4BANozDXpmZALNr11krgwN3ZAJZCgUxM12BxeNAhIlEj1c2BKJEpxbsBcp70yy6tZCvCaYRZBzmwGax3fpalUTXSBZBiZAZCnAL00RnO7X8lFZBuuICVlG7r3ZBpH2bZB8HZBekAT53MiTjaAzgVFZCBeiZBNudOIumSzWaZBUMKYOoSyL1w4IAZAbxYSubKotoDmQjdMKgQZDZD",
-  "profile_img_url": "https://scontent.xx.fbcdn.net/v/t1.0-1/c19.0.50.50/p50x50/482079_101057200042599_1717912243_n.jpg?oh=4c30219b196d1c3929133a804ac73e31&oe=5B04C04A",
-  "cover_photo_url": "https://scontent.xx.fbcdn.net/v/t1.0-9/13164312_621108868037427_608070769674273979_n.jpg?oh=b52adde87ac875a49c70a6a1b5c8295d&oe=5B43593A"
+  "profileImageUrl": "https://scontent.xx.fbcdn.net/v/t1.0-1/c19.0.50.50/p50x50/482079_101057200042599_1717912243_n.jpg?oh=4c30219b196d1c3929133a804ac73e31&oe=5B04C04A",
+  "coverPhotoUrl": "https://scontent.xx.fbcdn.net/v/t1.0-9/13164312_621108868037427_608070769674273979_n.jpg?oh=b52adde87ac875a49c70a6a1b5c8295d&oe=5B43593A"
 }
