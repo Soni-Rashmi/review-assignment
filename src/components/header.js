@@ -92,4 +92,4 @@ function setUserInfo(instance) {
       isLoggedIn: true
     });
   }
-}
+} 
