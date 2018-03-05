@@ -3,7 +3,7 @@ import FormGroup from 'react-bootstrap/lib/FormGroup';
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import FormControl from 'react-bootstrap/lib/FormControl';
 
-import facebook from "../assets/images/fb.png";
+// import facebook from "../assets/images/fb.png";
 
 export default class ContactUs extends Component {
   constructor(props) {
@@ -95,7 +95,7 @@ export default class ContactUs extends Component {
                   <span>Company No. 0011922922</span>
                 </div>
                 <div className="images">
-                  <img src={facebook} alt="facebook" />
+                  <img src="src/assets/images/fb.png" alt="facebook" />
                   <img src="src/assets/images/twitter.png" alt="twitter"/>
                 </div>
               </div>
