@@ -141,6 +141,7 @@ body {
       overflow: hidden; }
   body .post-container .avatar {
     border-radius: 50%;
+    cursor: pointer;
     width: 60px; }
   body .send-post {
     padding: 20px; }
@@ -182,10 +183,18 @@ body {
 @media screen and (max-width: 414px) {
   body .navbar-style .navbar-collapse .nav {
     margin-left: 0px; }
+  body .navbar-style .navbar-collapse .navbar-form .search-box, body .navbar-style .navbar-collapse .navbar-form .profile-img, body .navbar-style .navbar-collapse .profile-img .search-box, body .navbar-style .navbar-collapse .profile-img .profile-img {
+    display: none; }
+  body .navbar-style .navbar-collapse .navbar-form .logout-btn, body .navbar-style .navbar-collapse .profile-img .logout-btn {
+    display: block; }
+  body .navbar-style .navbar-collapse .navbar-form .logout-btn, body .navbar-style .navbar-collapse .navbar-form .bell-icon, body .navbar-style .navbar-collapse .profile-img .logout-btn, body .navbar-style .navbar-collapse .profile-img .bell-icon {
+    margin: 5px 0px 5px 10px; }
   body .photos-container .row .grid-img {
     height: 200px; }
   body .photos-container .row .image-left, body .photos-container .row .image-right {
-    padding: 5px 10px; } }
+    padding: 5px 10px; }
+  body .form-container, body .contact-us-card {
+    margin: 15px; } }
 
 @media screen and (max-width: 768px) {
   body .profile-card .email {

@@ -66,7 +66,7 @@ export default class Header extends Component {
             </ul>
             <form className="navbar-form navbar-right">
               <div className="form-group">
-                <input type="text" className="form-control" placeholder="Search" />
+                <input type="text" className="form-control search-box" placeholder="Search" />
               </div>
               <i className="glyphicon glyphicon-bell bell-icon"></i>
               {this.state && this.state.isLoggedIn ?

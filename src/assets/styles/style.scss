@@ -217,6 +217,7 @@ body {
     }
     .avatar {
       border-radius: 50%;
+      cursor: pointer;
       width: 60px;
     }
   }
@@ -282,6 +283,17 @@ body {
         .nav {
          margin-left: 0px;
        }
+       .navbar-form, .profile-img {
+         .search-box, .profile-img {
+           display: none;
+         }
+         .logout-btn {
+           display: block;
+         }
+         .logout-btn, .bell-icon {
+           margin: 5px 0px 5px 10px;
+         }
+       }
       }
     }
 
@@ -294,6 +306,10 @@ body {
           padding: 5px 10px;
         }
       }
+    }
+
+    .form-container, .contact-us-card {
+      margin: 15px;
     }
   }
 }

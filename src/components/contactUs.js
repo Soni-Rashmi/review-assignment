@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import FormControl from 'react-bootstrap/lib/FormControl';
-
-// import facebook from "../assets/images/fb.png";
+import twitter from "../assets/images/twitter.png";
+import facebook from "../assets/images/fb.png";
 
 export default class ContactUs extends Component {
   constructor(props) {

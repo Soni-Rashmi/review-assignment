@@ -32,7 +32,6 @@ export default class Home extends Component {
     if(this.getEmailValidationState() === "success" && this.getPasswordValidationState() === "success") {
       let profileData = jsonData;
       ls.set("profileData", profileData);
-      // localStorage.setItem("profileData", profileData);
       if(profileData.verified){
         this.props.history.push(PROFILE_ROUTE_PATH);
       }
@@ -87,9 +86,9 @@ export default class Home extends Component {
   getPasswordValidationState() {
     if(this.state && this.state.pwd) {
       const length = this.state.pwd.length;
-      if (length > 6 && length < 12) {
+      if (length > 6) {
         return 'success';
-      } else if(length <= 0) {
+      } else {
         return 'error';
       }
     }
